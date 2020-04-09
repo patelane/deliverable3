@@ -31,7 +31,7 @@ public static void main(String[] args){
     String n=inp.next();
     System.out.println("Enter your player ID:");
     int playerId=inp.nextInt();
-     Player p=new Player(n,playerId);
+     Player p=new Player("Blackjack",playerId,n);
     System.out.println("Hey "+p.getGameName()+ "Welcome to play black jack");
     System.out.println("Your id is "+p.getPlayerID());
     System.out.println("How much cash do you want to start with?");

@@ -12,15 +12,17 @@ package del3;
 public class Player extends Game
 {
     private int playerID; //the unique ID for this player
+    private String playerName;
     
     /**
      * A constructor that allows you to set the player's unique ID
      * @param name the unique ID to assign to this player.
      */
-    public Player(String givenName,int id)
+    public Player(String givenName,int id,String name)
     {
         super(givenName);
         playerID= id;
+        playerName=name;
     }
     
     /**
@@ -38,5 +40,19 @@ public class Player extends Game
     public void setPlayerID(int givenID) 
     {
         playerID = givenID;
+    }
+    
+    /**
+     * @return the playerName
+     */
+    public String getPlayerName() {
+        return playerName;
+    }
+
+    /**
+     * @param playerName the playerName to set
+     */
+    public void setPlayerName(String playerName) {
+        this.playerName = playerName;
     }
 }
