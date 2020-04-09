@@ -29,7 +29,7 @@ public static void main(String[] args){
     Scanner inp = new Scanner(System.in);
     System.out.println("Enter your nickname to play the blackjack game:");
     String n=inp.next();
-    System.out.println("Enter your player ID:");
+    System.out.println("Enter your player ID number:");
     int playerId=inp.nextInt();
      Player p=new Player("Blackjack",playerId,n);
     System.out.println("Hey "+p.getGameName()+ "Welcome to play black jack");
